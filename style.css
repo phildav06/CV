@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'cmu_brightroman';
+    src: url('fonts/cmunbmr-webfont.eot');
+    src: url('fonts/cmunbmr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cmunbmr-webfont.woff2') format('woff2'),
+         url('fonts/cmunbmr-webfont.woff') format('woff'),
+         url('fonts/cmunbmr-webfont.ttf') format('truetype'),
+         url('fonts/cmunbmr-webfont.svg#cmu_brightroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+	background-color: rgb(15, 15, 15);
+}
+
+#bloc_page
+{
+    width: 80%;
+	margin: auto;
+	background-color: black;
+}
+
+#liseret
+{
+	position: absolute;
+	background-image: url('images/banniere.png');
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	width: 15%;
+	height: 800px;
+}
+
+#conteneur
+{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0;
+}
+
+.DAVID_Philippe
+{
+	overflow:hidden;
+	border-radius:100px;
+	-webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    width:170px;
+	height:170px;
+	border: 5px solid #127cf5;
+	position: relative;
+	left: 5px;
+}
+
+nav ul
+{
+	display: flex;
+	display: block;
+	flex-direction: row;
+	float: right;
+	color: white;
+	font-size: 1.5em;
+	list-style-type: none;
+	margin: 0 auto;
+	width: 150px;
+	text-align: center;
+}
+
+nav a
+{
+	text-decoration: none;
+	background-color: #ff0000;
+	text-shadow: 2px 2px 5px black;
+	color: white;
+	font-weight: bold;
+	font-size: 0.8em;
+	display: block;
+	border-radius: 5px;
+	padding: 5px;
+
+}
+nav a:hover
+{
+	background-color: #ffffff;
+	color: black;
+	text-shadow: 1px 1px 4px black;
+}
+
+h1
+{
+	background-color: #127cf5;
+	text-shadow: 2px 2px 5px black;
+	color: white;
+	font-family: cmu_brightroman, sans-serif, Arial, Verdana;
+	font-weight: bold;
+	font-size: 1.5em;
+	width: 250px;
+	text-align: center;
+	margin-left: -1.5px;
+	border-radius: 0 5px 5px 0;
+	padding: 3px;
+}
+
+section
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between
+}
+
+article
+{
+	flex: 1 20%;
+	overflow: auto;
+	max-height: 60%;
+}
+
+article:nth-of-type(3) 
+{
+	flex: 2 20%;
+	overflow: auto;
+}
+
+h2
+{
+	display: block;
+	font-family: cmu_brightroman, sans-serif, Arial, Verdana;
+	text-shadow: 2px 2px 5px black;
+	color: white;
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+	display: flex;
+	margin-left: 40%;
+	margin-top: -3%;
+}
+
+h3
+{
+	background-color: #62d802;
+	font-family: cmu_brightroman, sans-serif, Arial, Verdana;
+	text-shadow: 2px 2px 5px black;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	width: 250px;
+	text-align: center;
+	border-radius: 5px;
+	padding: 3px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	margin-top: 70px;
+}
+
+h4
+{
+	background-color: #FFB300;
+	text-shadow: 2px 2px 5px black;
+	clear: both;
+	font-family: cmu_brightroman, sans-serif, Arial, Verdana;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2em;
+	width: 150px;
+	text-align: center;
+	border-radius: 5px;
+	padding: 3px;
+}
+h4:hover
+{
+	background-color: #127cf5;
+	color: black;
+}
+
+ul
+{
+	font-family: cmu_brightroman, sans-serif, Arial, Verdana;
+	font-size: 1em;
+	color: white;
+}
+
+li
+{
+	line-height: 1em;
+}
+
+strong
+{
+	line-height: 0.5em;
+}
+
+em
+{
+	line-height: 0.3em;
+}
