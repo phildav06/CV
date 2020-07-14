@@ -38,9 +38,9 @@ body
 	text-align: left;
 	vertical-align: top;
 	color: rgb(63, 62, 62);
-	margin-right: 100px;
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 }
 
 .photo_identite
@@ -52,9 +52,15 @@ body
 	border-radius:100px;
 	-webkit-border-radius:100px;
 	-moz-border-radius:100px;
-	box-shadow: 0 0 10px rgb(0, 0, 0);
+	border: 3px solid rgb(202, 173, 5);
 	position: absolute;
 	top: 50px; left: 65px;
+}
+
+.photo_identite:hover
+{
+	border: 2px solid white;
+	box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 h1
@@ -111,11 +117,44 @@ background-color: gray;
 {
 	width: 69%;
 	height: auto;
-	top: 0; bottom: 0; left: 190px;
+	top: 0; bottom: 0; left: 0;
 	display: flex;
 	flex-direction: column;
-	position: relative;
 	margin-bottom: 20px;
+	flex-grow: 2;
+	margin-left: 200px;
+}
+
+.ico_formation, .ico_business, .ico_recommandations
+{
+	width: 40px;
+	height: auto;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.ico_actuel
+{
+	width: 15px;
+	height: auto;
+	vertical-align: middle;
+	margin-right: 20px;
+	align-items: flex-start;
+}
+
+.ico_ancien
+{
+	width: 8px;
+	height: auto;
+	vertical-align: middle;
+	margin-right: 20px;
+	align-items: flex-start;
+}
+
+h3:hover
+{
+	color: rgb(255, 208, 1);
+	font-weight: bold;
 }
 
 #adress, #tel, #email, #site, #skype, #text1
@@ -137,6 +176,7 @@ header
 {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	margin-left: 25%;
 	margin-top: 50px;
 }
@@ -164,7 +204,9 @@ header
 
 #loisirs
 {
-	margin-top: 1250px;
+	position: absolute;
+	width: 100%;
+	bottom: 40px;
 }
 
 #icons
@@ -201,31 +243,32 @@ header
 {
 	width: 50px;
 	position: relative;
-	top: -25px; left: 0px;
-
+	top: -18px; left: 0px;
+	border: 1px solid rgb(255, 208, 1);
 }
 
 .trait_dessous_formation
 {
 	width: 100%;
 	position: relative;
-	top: -25px; left: 0px;
-
+	top: -18px; left: 0px;
+	border: 1px solid rgb(255, 208, 1);
 }
 
 .trait_dessous_experience
 {
 	width: 100%;
 	position: relative;
-	top: -25px; left: 0px;
-
+	top: -18px; left: 0px;
+	border: 1px solid rgb(255, 208, 1);
 }
 
 .trait_dessous_recommandations
 {
 	width: 100%;
 	position: relative;
-	top: -25px; left: 0px;
+	top: -18px; left: 0px;
+	border: 1px solid rgb(255, 208, 1);
 }
 
 .dates_detail
@@ -236,12 +279,31 @@ header
 
 .petite
 {
-	flex-grow: 1;
+	margin-top: 25px;
+	flex-grow: 0.8;
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: rgb(63, 62, 62);
+	text-align: left;
 }
 
 .grande
 {
+	margin-top: 25px;
 	flex-grow: 2;
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: rgb(63, 62, 62);
+	text-align: left;
+}
+
+p
+{
+	font-size: 1em;
 }
 
 @media all and (max-width: 1024px)
