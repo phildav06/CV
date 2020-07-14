@@ -8,75 +8,89 @@
 </head>
 
 <body>
-	<div id="bloc_page">
-		<header><!-- en_tête_de_page -->
-			<nav><!-- menu -->
-				<ul>
-					<li><a href="index.html">CV</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
+	<div class="bloc_page">
 
-			<div id="liseret"></div>
-			<div id="conteneur">
-				<a href="images/DAVID_Philippe.jpg" target="_blank" class="DAVID_Philippe" style="background: url(images/DAVID_Philippe_small.jpg);"></a>
-				<H1>DAVID Philippe</H1>
-			</div>
-			<h2><em>Développeur web</em></h2>
-		</header>
+		<div id="liseret"><!-- liseret gauche -->
+			<p><a href="images/DAVID_Philippe.jpg" target="_blank"><img src="images/DAVID_Philippe_small.jpg" class="photo_identite" alt="Photo de Philippe DAVID" /></a></p>
+			<section id="contact">
+				<h4 id="titre1">Contact</h4>
+				<p id="adress"><strong>Adresse:</strong><br />232 bis avenue Sainte marguerite<br /> 06200 Nice</p>
+				<p id="tel"><strong>Téléphone:</strong><br />+33(0)6 63 80 53 90</p>
+				<p id="email"><strong>Email:</strong><br />phildav@club.fr</p>
+				<p id="site"><strong>Site web:</strong><br />http://www.CVphildav.org</p>
+				<p id="skype"><strong>Skype :</strong><br />Lorem</p>
+			</section>
 
+			<section id="apropos">
+				<h4 id="titre2">à propos de moi</h4>
+				<p id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deserunt alias dignissimos, aliquam obcaecati nesciunt facere cumque adipisci hic, optio, expedita harum sequi incidunt magnam nemo labore quibusdam impedit maiores.</p>
+			</section>
+
+			<section id="loisirs">
+				<h4 id="titre3">Loisirs</h4>
+				<div id="icons">
+					<img src="images/swimmer-solid.svg" class="natation" alt="Natation">
+					<img src="images/biking-solid.svg" class="vtt" alt="VTT">
+					<img src="images/table-tennis-solid.svg" class="ping_pong" alt="Ping-pong">
+				</div>
+				</section>
+		</div>
 		
-		<hr id="barre1" />
-		
-	<section>
-		<h3>Mon parcours</h3>	
-		<article><!-- expérience -->
-			<H4><em>Mon expérience</em></H4>
-				<ul>
-					<li><strong>Technico-commercial</strong><p><em>OpenClassRooms</em></p><br /></li>
-					<li><strong>Éducateur Sportif</strong><p><em>OpenClassRooms</em></p><br /></li>
-					<li><strong>Chauffeur</strong><p><em>OpenClassRooms</em></p><br /></li>
-					<li><strong>Conseillé en Épargne et Prévoyance</strong><p><em>OpenClassRooms</em></p><br /></li>
-					<li><strong>Conseillé vendeur en produits surgelés</strong><p><em>OpenClassRooms</em></p><br /></li>
-					<li><strong>Serveur, Barman</strong><p><em>OpenClassRooms</em></p><br /></li>
-					<li><strong>Service militaire</strong><p><em>OpenClassRooms</em></p><br /></li>
-					<LI><strong>Pisciculteur</strong><p><em>OpenClassRooms</em></p><br /></LI>
-				</ul>
-		</article>
+		<div id="Conteneur">
+			<header><!-- en_tête_de_page -->
+				<H1>Philippe <span>DAVID</span></H1>
+				<H2>Développeur web freelance</H2>
+				<div class="trait_dessous_develo"><hr></div>
+			</header>
 
-		<article><!-- compétences -->
-			<H4><em>Mes compétences</em></H4>
-				<ul>
-					<li><strong>D</strong><p><em>OpenClassRooms</em></p><br /></li>
-					<li><strong>E</strong><p><em>OpenClassRooms</em></p><br /></li>
-					<li><strong>F</strong><p><em>OpenClassRooms</em></p><br /></li>
-				</ul>
-		</article>
+			<section id="formation"><!-- formation -->
+				<H3>Formation</H3>
+				<div class="trait_dessous_formation"><hr></div>
+				<div class="dates_detail">
+					<div class="petite">
+						2020-2021<br />Nice
+					</div>
+					<div class="grande">
+						<strong>Développeur web</strong><p>OpenClassRooms</p><br />
+					</div>
+				</div>
+			
 
-		<article><!-- formation -->
-			<H4><em>Ma formation</em></H4>
-				<ul>
-					<li><strong>Développeur web</strong><p><em>OpenClassRooms</em></p><br /></li>
-					
-					<li><strong>BEESAN</strong><p><em>Brevet d'État d'État d'Éducateur Sportif des Activités de la Natation</em></p><br /></li>
-					
-					<li><strong>CFAPSE</strong><p><em>Certificat de Formation Aux Premiers Secours en Équipe</em></p><br /></li>
-					
-					<li><strong>BEPA Pisciculture</strong><p><em>Brevet d'Études Professionnelles Agricoles</em></p><br /></li>
-					
-				</ul>
-		</article>
-	</section>
+					<ul>
+						<li>2020-2021<br />Nice<strong>Développeur web</strong><p>OpenClassRooms</p><br /></li>
+						<li>1995<br />Le Mans<strong>BEESAN</strong><p>Brevet d'État d'État d'Éducateur Sportif des Activités de la Natation</p><br /></li>
+						<li>1993<br />Le Mans<strong>BNSSA</strong><p>Brevet National de Sauvetage et Sécurité Aquatique</p><br /></li>
+						<li>1993<br />Le Mans<strong>CFAPSE</strong><p>Certificat de Formation Aux Premiers Secours en Équipe</p><br /></li>					
+						<li>1983-1984<br />Guérande<strong>BEPA Pisciculture</strong><p>Brevet d'Études Professionnelles Agricoles</p><br /></li>
+					</ul>
+			</section>
 
-	<hr id="barre2" />
-		<footer><!-- pied_de_page -->
-			<p>Plan du site
-			<a href="#">Plan du site </a>
-			<a href="#">Mentions légales </a>
-			</p>
+			<section id="experience"><!-- expérience -->
+				<H3>Expérience professionnelle</H3>
+				<div class="trait_dessous_experience"><hr></div>
+					<ul>
+						<li><strong>Technico-commercial</strong><p>OpenClassRooms</p><br /></li>
+						<li><strong>Éducateur Sportif</strong><p>OpenClassRooms</p><br /></li>
+						<li><strong>Chauffeur</strong><p>OpenClassRooms</p><br /></li>
+						<li><strong>Conseillé en Épargne et Prévoyance</strong><p>OpenClassRooms</p><br /></li>
+						<li><strong>Conseillé vendeur en produits surgelés</strong><p>OpenClassRooms</p><br /></li>
+						<li><strong>Serveur, Barman</strong><p>OpenClassRooms</p><br /></li>
+						<li><strong>Service militaire</strong><p>OpenClassRooms</p><br /></li>
+						<LI><strong>Pisciculteur</strong><p>OpenClassRooms</p><br /></LI>
+					</ul>
+			</section>
+			
+			<section id="recommandations"><!-- recommandations -->
+				<H3>Recommandations</H3>
+				<div class="trait_dessous_recommandations"><hr></div>
+					<ul>
+						<li><strong>D</strong><p><em>OpenClassRooms</em></p><br /></li>
+						<li><strong>E</strong><p><em>OpenClassRooms</em></p><br /></li>
+						<li><strong>F</strong><p><em>OpenClassRooms</em></p><br /></li>
+					</ul>
+			</section>
+		</div>
 
-		</footer>
 	</div>
 </body>
 </html>
