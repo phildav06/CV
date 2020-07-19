@@ -200,6 +200,11 @@ header
 #contact
 {
 	margin-top: 200px;
+	font-size: 0.8em;
+}
+#contact, #apropos
+{
+	font-size: 0.8em;
 }
 
 #loisirs
@@ -287,6 +292,7 @@ header
 	justify-content: space-between;
 	color: rgb(63, 62, 62);
 	text-align: left;
+	font-size: 0.8em;
 }
 
 .grande
@@ -299,12 +305,9 @@ header
 	justify-content: space-between;
 	color: rgb(63, 62, 62);
 	text-align: left;
+	font-size: 0.8em;
 }
 
-p
-{
-	font-size: 1em;
-}
 
 @media all and (max-width: 1024px)
 {
