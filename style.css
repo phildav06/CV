@@ -203,14 +203,14 @@ header
 	margin-top: 20px;
 }
 
-#contact, #apropos
+#contact, #apropos, #loisirs
 {
 	font-size: 0.7em;
 }
 
 #loisirs
 {
-	bottom: 40px;
+	
 }
 
 #icons
