@@ -36,7 +36,7 @@ body
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	height: 100%;
+	height: auto;
 }
 
 .photo_identite
@@ -126,13 +126,14 @@ background-color: gray;
 	margin-bottom: 20px;
 	flex-grow: 2;
 	justify-content: center;
+	mxn-width: 699px;
 }
 
 .parcourt
 {
 	margin-top: 65px;
 	margin-left: 9%;
-	width: auto;
+	max-width: 320px;
 
 }
 
@@ -168,13 +169,16 @@ background-color: gray;
 	padding-right: 30px;
 }
 
+#text1
+{
+	height: 300px;
+}
 header
 {
 	display: flex;
 	flex-direction: column;
 	margin-left: 9%;
 	margin-top: 50px;
-
 }
 
 #formation
@@ -201,16 +205,23 @@ header
 #contact
 {
 	margin-top: 20px;
+	flex-grow: 0;
+}
+
+#apropos
+{
+	flex-grow: 1;
+}
+#loisirs
+{
+	bottom: 0px;
+	position: relative;
+	flex-grow: 0;
 }
 
 #contact, #apropos, #loisirs
 {
 	font-size: 0.7em;
-}
-
-#loisirs
-{
-	
 }
 
 #icons
@@ -222,25 +233,10 @@ header
 	justify-content: space-between;
 }
 
-.natation
+.natation, .vtt, .ping_pong
 {
 	width: 40px;
-	height: 32px;
-	background-repeat: no-repeat;
-}
-
-.vtt
-{
-	width: 40px;
-	height: 32px;
-	background-repeat: no-repeat;
-
-}
-
-.ping_pong
-{
-	width: 40px;
-	height: 32px;
+	height: auto;
 	background-repeat: no-repeat;
 }
 
@@ -282,7 +278,6 @@ header
 	display: flex;
 	justify-content: space-between;
 	vertical-align: top;
-	ali
 }
 
 .icons_left
@@ -326,8 +321,29 @@ header
 
 @media all and (max-width: 480px)
 {
-	header {width: 387px;}
-	.liseret {width: 387px;}
-	.conteneur {width: 100%;}
-	.bloc_page{flex-direction: column-reverse; width: 100%; box-shadow: none; margin-left: 0;}
+	header {min-width: 100%;}
+	.liseret {min-width: 100%;}
+	.conteneur {min-width: 100%; margin-bottom: 50px;}
+	.bloc_page{flex-direction: column-reverse; min-width: 100%; box-shadow: 0 3px 6px black;}
+	body {max-width: 480px;}
+	#icons {padding-left: 15%; padding-right: 15%; height: 80px;}
+	.photo_identite {max-width: 13rem; top: 50px;}
+	h4 {font-size: 2em; padding: 10px;}
+	#contact { margin-top: 45px;}
+	.natation, .vtt, .ping_pong {width: 50px; height: auto;}
+}
+
+@media all and (min-width: 481px) and (max-width: 699px)
+{
+	header {min-width: 100%;}
+	.liseret {min-width: 100%;}
+	.conteneur {min-width: 100%; margin-bottom: 50px;}
+	.bloc_page{flex-direction: column-reverse; min-width: 100%; box-shadow: 0 3px 6px black;}
+	body {max-width: 699px;}
+	#icons {padding-left: 15%; padding-right: 15%; height: 100px;}
+	.parcourt {min-width: 90%;}
+	.photo_identite {max-width: 15rem; top: 50px; bottom: 50px;}
+	#contact { margin-top: 55px;}
+	h4 {font-size: 2em; padding: 10px;}
+	.natation, .vtt, .ping_pong {width: 70px; height: auto;}
 }
