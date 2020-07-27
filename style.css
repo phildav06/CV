@@ -126,14 +126,13 @@ background-color: gray;
 	margin-bottom: 20px;
 	flex-grow: 2;
 	justify-content: center;
-	mxn-width: 699px;
 }
 
 .parcourt
 {
 	margin-top: 65px;
 	margin-left: 9%;
-	max-width: 320px;
+	width: 445px;
 
 }
 
@@ -169,10 +168,6 @@ background-color: gray;
 	padding-right: 30px;
 }
 
-#text1
-{
-	height: 300px;
-}
 header
 {
 	display: flex;
@@ -226,11 +221,9 @@ header
 
 #icons
 {
-	padding-left: 25px;
-	padding-right: 25px;
 	padding-bottom: 25px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .natation, .vtt, .ping_pong
@@ -326,11 +319,12 @@ header
 	.conteneur {min-width: 100%; margin-bottom: 50px;}
 	.bloc_page{flex-direction: column-reverse; min-width: 100%; box-shadow: 0 3px 6px black;}
 	body {max-width: 480px;}
-	#icons {padding-left: 15%; padding-right: 15%; height: 80px;}
+	#icons {height: 80px;}
 	.photo_identite {max-width: 13rem; top: 50px;}
 	h4 {font-size: 2em; padding: 10px;}
 	#contact { margin-top: 45px;}
 	.natation, .vtt, .ping_pong {width: 50px; height: auto;}
+	#apropos {height: 400px;}
 }
 
 @media all and (min-width: 481px) and (max-width: 699px)
@@ -340,10 +334,11 @@ header
 	.conteneur {min-width: 100%; margin-bottom: 50px;}
 	.bloc_page{flex-direction: column-reverse; min-width: 100%; box-shadow: 0 3px 6px black;}
 	body {max-width: 699px;}
-	#icons {padding-left: 15%; padding-right: 15%; height: 100px;}
+	#icons {height: 100px;}
 	.parcourt {min-width: 90%;}
 	.photo_identite {max-width: 15rem; top: 50px; bottom: 50px;}
 	#contact { margin-top: 55px;}
 	h4 {font-size: 2em; padding: 10px;}
 	.natation, .vtt, .ping_pong {width: 70px; height: auto;}
+	#apropos {height: 400px;}
 }
