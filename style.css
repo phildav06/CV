@@ -29,7 +29,7 @@ body
 .liseret
 {
 	background-color:rgb(255, 208, 1);
-	width: 10.5rem;
+	width: 23%;
 	text-align: left;
 	vertical-align: top;
 	color: rgb(63, 62, 62);
@@ -41,7 +41,7 @@ body
 
 .photo_identite
 {
-	max-width: 9rem;
+	width: 70%;
 	border-radius:100%;
 	-webkit-border-radius:100%;
 	-moz-border-radius:100%;
@@ -126,19 +126,20 @@ background-color: gray;
 	margin-bottom: 20px;
 	flex-grow: 2;
 	justify-content: center;
+	width: 50%;
 }
 
 .parcourt
 {
-	margin-top: 65px;
+	margin-top: 35px;
 	margin-left: 9%;
-	width: 445px;
+	width: 90%;
 
 }
 
 .ico_formation, .ico_business, .ico_recommandations
 {
-	width: 35px;
+	width: 25px;
 	height: auto;
 	vertical-align: middle;
 	margin-right: 20px;
@@ -146,26 +147,28 @@ background-color: gray;
 
 .ico_actuel
 {
-	width: 15px;
+	width: 8px;
 	height: auto;
 	vertical-align: middle;
-	margin-right: 20px;
-	align-items: flex-start;
+	margin-right: 8px;
 }
 
 .ico_ancien
 {
-	width: 8px;
+	width: 5px;
 	height: auto;
 	vertical-align: middle;
-	margin-right: 20px;
-	align-items: flex-start;
+	margin-right: 10px;
 }
 
 #adress, #tel, #email, #site, #skype, #text1
 {
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 0.6rem;
+	position: relative;
+	width: 80%;
+	text-align: justify;
 }
 
 header
@@ -174,6 +177,7 @@ header
 	flex-direction: column;
 	margin-left: 9%;
 	margin-top: 50px;
+	width: 90%;
 }
 
 #formation
@@ -187,14 +191,12 @@ header
 {
 	display: flex;
 	flex-direction: column;
-	margin-top: 50px;
 }
 
 #recommandations
 {
 	display: flex;
 	flex-direction: column;
-	margin-top: 50px;
 }
 
 #contact
@@ -207,6 +209,7 @@ header
 {
 	flex-grow: 1;
 }
+
 #loisirs
 {
 	bottom: 0px;
@@ -228,7 +231,7 @@ header
 
 .natation, .vtt, .ping_pong
 {
-	width: 40px;
+	width: 20%;
 	height: auto;
 	background-repeat: no-repeat;
 }
@@ -271,31 +274,24 @@ header
 	display: flex;
 	justify-content: space-between;
 	vertical-align: top;
+	align-items: baseline;
+	font-size: 70%;
 }
 
-.icons_left
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
 
 .petite
 {
-	margin-top: 25px;
 	flex-grow: 0.9;
-	width: 145px;
+	width: 90px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	color: rgb(63, 62, 62);
 	text-align: left;
-	font-size: 0.7em;
 }
 
 .grande
 {
-	margin-top: 25px;
 	flex-grow: 2;
 	width: 150px;
 	display: flex;
@@ -303,7 +299,6 @@ header
 	justify-content: space-between;
 	color: rgb(63, 62, 62);
 	text-align: left;
-	font-size: 0.7em;
 	padding-right: 22px;
 }
 
@@ -312,7 +307,20 @@ header
 	text-transform: uppercase;
 }
 
-@media all and (max-width: 480px)
+.agences
+{
+	display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    font-size: 70%;
+}
+
+.left
+{
+	width: 50%;
+}
+@media all and (max-width: 479px)
 {
 	header {min-width: 100%;}
 	.liseret {min-width: 100%;}
@@ -320,20 +328,25 @@ header
 	.bloc_page{flex-direction: column-reverse; min-width: 100%; box-shadow: 0 3px 6px black;}
 	body {max-width: 480px;}
 	#icons {height: 80px;}
-	.photo_identite {max-width: 13rem; top: 50px;}
-	h4 {font-size: 2em; padding: 10px;}
+	.photo_identite {max-width: 10rem; top: 40px;}
+	h1 {font-size: 1.8em;}
+	h2 {font-size: 1.2em;}
+	h3 {font-size: 0.7em;}
+	h4 {font-size: 1.2em; padding: 10px;}
+	.trait_dessous_formation .trait_dessous_experience .trait_dessous_recommandations{width: auto;}
 	#contact { margin-top: 45px;}
 	.natation, .vtt, .ping_pong {width: 50px; height: auto;}
 	#apropos {height: 400px;}
+
 }
 
-@media all and (min-width: 481px) and (max-width: 699px)
+@media all and (min-width: 480px) and (max-width: 959px)
 {
 	header {min-width: 100%;}
 	.liseret {min-width: 100%;}
 	.conteneur {min-width: 100%; margin-bottom: 50px;}
 	.bloc_page{flex-direction: column-reverse; min-width: 100%; box-shadow: 0 3px 6px black;}
-	body {max-width: 699px;}
+	body {max-width: 960px;}
 	#icons {height: 100px;}
 	.parcourt {min-width: 90%;}
 	.photo_identite {max-width: 15rem; top: 50px; bottom: 50px;}
@@ -342,3 +355,4 @@ header
 	.natation, .vtt, .ping_pong {width: 70px; height: auto;}
 	#apropos {height: 400px;}
 }
+
