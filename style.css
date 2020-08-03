@@ -161,15 +161,37 @@ background-color: gray;
 	margin-right: 10px;
 }
 
-#adress, #tel, #email, #site, #skype, #text1
+#adress, #tel, #email, #site, #skype, #text1, #text2, #text3, #text4
 {
 	padding-left: 10%;
 	padding-right: 10%;
-	font-size: 0.6rem;
+	font-size: 0.7rem;
 	position: relative;
 	width: 80%;
-	text-align: justify;
+	text-align: start;
+	font-weight: bold;
 }
+
+.ico_grey1, .ico_grey2
+{
+	width: 8px;
+	height: auto;
+	margin-left: 4px;
+}
+
+#liste1
+{
+	list-style-type: square;
+	padding-left: 15%;
+	padding-right: 10%;
+	font-size: 0.7rem;
+	position: relative;
+	width: 80%;
+	text-align: start;
+	font-weight: bold;
+}
+
+
 
 header
 {
@@ -323,7 +345,7 @@ header
 @media all and (max-width: 479px)
 {
 	header {min-width: 100%;}
-	.liseret {min-width: 100%;}
+	.liseret {min-width: 100%; font-size: 1em;}
 	.conteneur {min-width: 100%; margin-bottom: 50px;}
 	.bloc_page{flex-direction: column-reverse; min-width: 100%; box-shadow: 0 3px 6px black;}
 	body {max-width: 480px;}
@@ -336,8 +358,10 @@ header
 	.trait_dessous_formation .trait_dessous_experience .trait_dessous_recommandations{width: auto;}
 	#contact { margin-top: 45px;}
 	.natation, .vtt, .ping_pong {width: 50px; height: auto;}
-	#apropos {height: 400px;}
-
+	#apropos {height: auto;}
+	#adress, #tel, #email, #site, #skype, #text1, #text2, #text3, #text4, #liste1 {font-size: 0.8rem;}
+	.dates_detail {font-size: 60%;}
+	.agences {font-size: 60%;}
 }
 
 @media all and (min-width: 480px) and (max-width: 959px)
@@ -353,6 +377,10 @@ header
 	#contact { margin-top: 55px;}
 	h4 {font-size: 2em; padding: 10px;}
 	.natation, .vtt, .ping_pong {width: 70px; height: auto;}
-	#apropos {height: 400px;}
+	#apropos {height: auto;}
+	#adress, #tel, #email, #site, #skype, #text1, #text2, #text3, #text4, #liste1 {font-size: 0.8rem;}
+	.dates_detail {font-size: 60%;}
+	.agences {font-size: 60%;}
 }
+
 
